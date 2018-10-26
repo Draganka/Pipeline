@@ -1,3 +1,5 @@
-node {
-  echo "qwerty"
+node ('master'){
+  stage('test'){
+  git url: 'https://github.com/Draganka/Pipeline.git'
+  echo "done"
 }
